@@ -1,0 +1,126 @@
+
+body{
+  background-image: url("https://www.pngkit.com/png/detail/69-693356_open-books-png-blank-book-opening-gif.png");
+  background-repeat: no-repeat;
+  background-size: 99%;
+}
+
+.App {
+  
+   text-align: center;
+  margin: 0 auto;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+h1 {
+  color: rgb(54, 54, 75);
+  text-shadow: 2px 2px #55ACEE;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  border: 2px solid rgb(85, 85, 100);
+}
+
+.btn_quote {
+  border: 4px ridge rgb(63, 56, 56);
+  margin: 10px;
+  padding:10px;
+  color: whitesmoke;
+  background-color: #222;
+}
+
+.fa-pencil{
+  font-size: 15px;
+  padding:4px;
+}
+
+.fa-quote-left {
+ margin-left:10px;
+ padding:3px;
+ font-size: 22px;
+}
+
+#quoteAuthor {
+  text-align: right;
+  margin-right:15px;
+}
+
+#quoteText {
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration-color: rgb(98, 149, 190);
+  width: 70%;
+  text-align: left;
+  margin-left:10px;
+}
+
+.scroll{
+  background-color:  rgb(219, 223, 235);
+  width: 80%;
+  height: 300px;
+  border: 5px ridge rgba(62, 72, 102, 0.514);
+  overflow: scroll;
+  align-content: center;
+  margin-left:10%;
+  margin-top:15px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+li {
+   font-size:1.5em;
+   color-adjust: rgb(41, 51, 87);
+   color-interpolation-filters: auto;
+   color:rgb(59, 36, 36);
+   line-height: 2em;
+   text-align:left;
+   width: 70%;
+   margin-left:60px;
+   margin-top:60px;
+}
+
+.quoteBox {
+  margin-left: 15%;
+  margin-top:10px;
+  margin-bottom: 10px;
+  background-color: rgb(205, 208, 216);
+  border:2px ridge rgb(110, 107, 121);
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width:70%;
+  padding:20px;
+}
