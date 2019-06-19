@@ -17,6 +17,7 @@ class QuoteMachine extends Component {
         this.state=initialState;
         this.END_POINT = 'https://quota.glitch.me/random';
         this.url = 'https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json';
+
     }
 
     reset() {
@@ -75,7 +76,9 @@ class QuoteMachine extends Component {
                 let items = this.state.items;
                 for(let i=0;i<data.quotes.length;i++){
                     let j=data.quotes[i].quote;
-                    items.push(j)
+                    let k=data.quotes[i].author;
+                    let final = j + " ¨ " + k + " ¨ "; 
+                    items.push(final)
                 }
                
                 this.setState(items, ()=>{
@@ -96,7 +99,11 @@ class QuoteMachine extends Component {
             <div className="scroll">
                 {items.map((todo, i) => {
                   return (
-                      <li key={todo.toString()}>{todo}</li>
+                      <li key={todo.toString()}>
+                      
+                      {todo}
+                      <div onClick={()=>this.shareOnTwitter(todo)} className="fa fa-twitter small-twitter"></div>
+                      </li>
                   );
                 })
                 }
